@@ -1,0 +1,45 @@
+.footer {
+    .inner__wrapper{
+        text-align: center;
+        padding-block: 3rem;
+        .logo-clipboard {
+            max-width: 3.5rem;
+        }
+        .inside__links{
+            padding-block: 3rem;
+            li{
+                list-style: none;
+                padding-bottom: .5rem;
+            }
+        }.outside__links{
+            a{
+                font-size: 1.5rem;
+            }
+            a + a{
+                margin-left: 1.5rem;
+            }
+        }
+    }
+   
+}
+
+@media screen and (min-width:"800px"){
+    .footer{
+        .inner__wrapper{
+            text-align: justify;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .logo-clipboard {
+                margin-right: 8.5rem;
+            }
+            .inside__links{
+                margin-right: auto;
+                max-width: 31rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;                
+            }            
+        }
+    }
+}

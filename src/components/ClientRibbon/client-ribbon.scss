@@ -1,0 +1,15 @@
+.client-ribbon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .client__logo{
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:"900px"){
+    .client-ribbon{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,108 @@
+
+// imported FONT
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+// ## Layout: Mobile: 375px, Desktop: 1440px
+
+// ## Colors ------------------------
+// ### Primary
+$Strong-Cyan: hsl(171, 66%, 44%);
+$Light-Blue: hsl(233, 100%, 69%);
+$Strong-Cyan-5: hsla(171, 66%, 44%, .5);
+$Light-Blue-5: hsla(233, 100%, 69%, .5);
+
+
+// ### Neutral
+$Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$Grayish-Blue: hsl(201, 11%, 66%);
+$Grayish-Blue-2: hsla(201, 11%, 66%, .2);
+
+// ## Typography -------------------
+$Body-Font-Size: 18px;
+$Bai-Font: "Bai Jamjuree", sans-serif;
+$Font-400: 400;
+$Font-600: 600;
+
+
+// roots, body, wrapper, footer
+//*************************************************
+
+// mobile- 375-----------------------------
+*,::before,::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+body{
+  font-family: $Bai-Font;
+  background-image: url(./assets/images/bg-header-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #fff;
+  min-height: 100vh;
+  margin-top: 3.25rem;
+}
+img{
+  max-width: 100%;
+}
+.container__wrapper {
+  // background-color: red;
+  max-width: 83%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding-block: 5rem;
+}
+a{
+  text-decoration: none;
+  color: $Dark-Grayish-Blue;
+}
+
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+h1, h2, h3{
+  
+  color: $Dark-Grayish-Blue;
+}
+p {
+  font-size: $Body-Font-Size;
+  color: $Grayish-Blue;
+}
+.btn{
+  &--ios{
+    background-color: $Strong-Cyan;
+  }
+  &--mac{
+    background-color: $Light-Blue;
+  }
+  // active states
+  &--ios:hover{
+    box-shadow:  -4px 4px 16px $Strong-Cyan-5;
+  }
+  &--mac:hover{
+    box-shadow: -4px 4px 16px $Light-Blue-5;
+  }
+}
+
+
+footer{
+  background-color: $Grayish-Blue-2;
+  color: $Dark-Grayish-Blue;
+  // active links
+  a:hover{
+    color: $Strong-Cyan;
+  }
+  // active state
+  a > img:hover {
+    background-color: $Strong-Cyan;
+  }
+}
+
+// desktop- 1440---------------------------
